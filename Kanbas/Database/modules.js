@@ -61,6 +61,7 @@ export default [
       }
     ]
   },
+
   {
     "_id": "M201",
     "name": "Introduction to Mobile App Development",
@@ -123,6 +124,7 @@ export default [
       }
     ]
   },
+  
   {
     "_id": "M301",
     "name": "Introduction to Software Engineering",
