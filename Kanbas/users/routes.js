@@ -3,6 +3,7 @@ let globalCurrentuser;
 
 export default function UserRoutes(app) {
   const createUser = async (req, res) => {
+    console.log(req.body);
     const user = await dao.createUser(req.body);
     res.json(user);
   };
