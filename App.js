@@ -14,19 +14,19 @@ const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0
 console.log(CONNECTION_STRING);
 mongoose.connect(CONNECTION_STRING);
 const app = express();
-// app.use(
-//     cors({
-//       credentials: true,
-//     origin: process.env.FRONTEND_URL,
+app.use(
+    cors({
+      credentials: true,
+    origin: process.env.FRONTEND_URL,
 
-//     })
-//    );
+    })
+   );
 
-app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000', 
-  credentials: true,
-  // allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept']
-}));
+// app.use(cors({
+//   origin: process.env.FRONTEND_URL || 'http://localhost:3000', 
+//   credentials: true,
+//   allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept']
+// }));
 
 
    const sessionOptions = {
